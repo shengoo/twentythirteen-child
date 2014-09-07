@@ -17,7 +17,9 @@ add_action('admin_print_footer_scripts','eg_quicktags');
 function eg_quicktags() {
 ?>
 <script type="text/javascript" charset="utf-8">
-QTags.addButton( 'eg_pre', 'pre','<pre>', '</pre>', 'q' );
+if(typeof QTags !== "undefined"){
+  QTags.addButton( 'eg_pre', 'pre','<pre>', '</pre>', 'q' );
+}
 </script>
 <?php
 }
