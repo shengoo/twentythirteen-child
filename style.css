@@ -1,0 +1,45 @@
+/*
+
+ Theme Name:   Twenty Thirteen Child
+
+ Theme URI:    https://github.com/shengoo/twentythirteen-child
+
+ Description:  Twenty Thirteen Child Theme
+
+ Author:       Qing Sheng
+
+ Author URI:   http://www.sheng00.com
+
+ Template:     twentythirteen
+
+ Version:      1.0.0
+
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+
+ Text Domain:  twenty-thirteen-child
+
+*/
+
+
+
+/*
+
+For older themes, and themes that do not use wp_enqueue_style() to enqueue their stylesheet, use the following line where twentyfourteen is the name of the directory where the theme resides:
+
+
+
+@import url("../twentythirteen/style.css");
+
+*/
+
+
+
+/* =Theme customization starts here
+
+-------------------------------------------------------------- */
+
+@import url("../twentythirteen/style.css");
+
+.adsbygoogle{
+    background: transparent;
+}
