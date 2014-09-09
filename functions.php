@@ -35,6 +35,15 @@ function add_highlightjs(){
 add_action("wp_footer","add_highlightjs");
 
 
+//add highlightjs
+function add_bdhm(){?>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F54020dd3876a331575215790f15adf1a' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<?}
+add_action("wp_footer","add_bdhm");
+
 
 
 
