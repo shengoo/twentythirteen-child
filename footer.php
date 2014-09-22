@@ -16,7 +16,7 @@
 
       <div class="site-info" style="text-align: center;">
         <?php do_action( 'twentythirteen_credits' ); ?>
-        <a href="http://www.miitbeian.gov.cn/" title="京ICP备14044446号">京ICP备14044446号</a>
+        <a href="http://www.miitbeian.gov.cn/" title="京ICP备14044446号" target="_blank">京ICP备14044446号</a>
       </div><!-- .site-info -->
     </footer><!-- #colophon -->
   </div><!-- #page -->
