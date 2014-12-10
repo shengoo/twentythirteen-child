@@ -23,7 +23,10 @@ function favicon_link() {
 add_action( 'wp_head', 'favicon_link' );
 
 
-
+function dequeue_devicepx() {
+wp_dequeue_script( 'devicepx' );
+}
+add_action( 'wp_enqueue_scripts', 'dequeue_devicepx', 20 );
 
 
 //add pre button
