@@ -1,7 +1,10 @@
 <?php
 
 
-
+function remove_devicepx() {
+    wp_dequeue_script( 'devicepx' );
+}
+add_action( 'wp_enqueue_scripts', 'remove_devicepx' );
 
 
 function favicon_link() {
