@@ -8,17 +8,9 @@ add_action( 'wp_enqueue_scripts', 'remove_devicepx' );
 
 
 function favicon_link() {
-
-
-
     echo '<link rel="shortcut icon" type="image/x-icon" href="/favicon48.ico" />' . "\n";
-
     echo '<link rel="icon" href="/favicon48.ico" type="image/x-icon">' . "\n";
-
     echo '<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />' . "\n";
-
-
-
 }
 
 
@@ -126,7 +118,7 @@ function add_ga(){?>
 
 <?}
 
-add_action("wp_footer","add_ga");
+// add_action("wp_footer","add_ga");
 
 
 
