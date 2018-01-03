@@ -72,17 +72,22 @@ if(typeof QTags !== "undefined"){
 
 //add baidu tongji
 
-function add_bdhm(){?>
+function add_bdhm(){
+?>
 
-<script type="text/javascript">
-
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F54020dd3876a331575215790f15adf1a' type='text/javascript'%3E%3C/script%3E"));
-
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?54020dd3876a331575215790f15adf1a";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 </script>
 
-<?}
+
+<?php
+}
 
 add_action("wp_footer","add_bdhm");
 
@@ -677,7 +682,7 @@ class CFXY_Widget_Blog_Stat extends WP_Widget
 
     }
 
-}
+//}
 
 
 
