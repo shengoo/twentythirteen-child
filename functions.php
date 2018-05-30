@@ -1,6 +1,7 @@
 <?php
 
 
+//remove devicepx from jetpack
 function remove_devicepx() {
     wp_dequeue_script( 'devicepx' );
 }
@@ -12,16 +13,8 @@ function favicon_link() {
     echo '<link rel="icon" href="/favicon48.ico" type="image/x-icon">' . "\n";
     echo '<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />' . "\n";
 }
-
-
-
 add_action( 'wp_head', 'favicon_link' );
 
-
-function dequeue_devicepx() {
-wp_dequeue_script( 'devicepx' );
-}
-add_action( 'wp_enqueue_scripts', 'dequeue_devicepx', 20 );
 
 
 //add pre button
