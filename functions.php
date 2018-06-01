@@ -19,7 +19,7 @@ function favicon_link() {
 
 //add pre button
 
-add_action('admin_print_footer_scripts','eg_quicktags');
+//add_action('admin_print_footer_scripts','eg_quicktags');
 
 function eg_quicktags() {
 
@@ -43,21 +43,18 @@ if(typeof QTags !== "undefined"){
 
 
 
-// //add highlightjs
+ //add highlightjs
 
-// function add_highlightjs(){
+function add_highlightjs(){
+?>
+<link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<?php
+}
 
-//     echo '<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">' . "\n";
-
-//     echo '<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/tomorrow.min.css">' . "\n";
-
-//     echo '<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script>' . "\n";
-
-//     echo '<script>hljs.initHighlightingOnLoad();</script>' . "\n";
-
-// }
-
-// add_action("wp_footer","add_highlightjs");
+add_action("wp_footer","add_highlightjs");
 
 
 
@@ -92,16 +89,14 @@ function baidu_site_verification() {
     echo '<meta name="baidu-site-verification" content="ifCtQPpS2J" />' . "\n";
 
 }
-
-
-
 add_action( 'wp_head', 'baidu_site_verification' );
 
 
 
 //add ga
 
-function add_ga(){?>
+function add_ga(){
+?>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -114,9 +109,11 @@ function add_ga(){?>
 
 </script>
 
-<?}
+<?php
+}
 
 // add_action("wp_footer","add_ga");
 
 // 激活链接管理功能
 add_filter( 'pre_option_link_manager_enabled', '__return_true' );
+

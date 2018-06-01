@@ -44,11 +44,15 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
     background: transparent;
 }
 
+pre {
+  padding: 0;
+}
+
 code {
   padding: 2px 4px;
-  font-size: 90%;
+  /*font-size: 90%;
   color: #c7254e;
-  background-color: #f9f2f4;
+  background-color: #f9f2f4;*/
   border-radius: 4px;
 }
 
