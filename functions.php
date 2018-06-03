@@ -112,7 +112,29 @@ function add_ga(){
 <?php
 }
 
-// add_action("wp_footer","add_ga");
+add_action("wp_footer","add_ga");
+
+// 腾讯统计
+function add_ta(){
+?>
+<script type="text/javascript" src="//tajs.qq.com/stats?sId=25092474" charset="UTF-8"></script>
+<?php
+}
+add_action("wp_footer","add_ta");
+
+// google adsense
+function add_google_adsense(){
+?>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-7178664821856375",
+          enable_page_level_ads: true
+     });
+</script>
+<?php
+}
+add_action( 'wp_head', 'add_google_adsense' );
 
 // 激活链接管理功能
 add_filter( 'pre_option_link_manager_enabled', '__return_true' );
