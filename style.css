@@ -109,3 +109,8 @@ img {
 audio, canvas, img, video {
   vertical-align: middle;
 }
+
+.runcode .runcode_text {
+  width: 100%;
+  min-height: 200px;
+}
