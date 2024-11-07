@@ -125,13 +125,13 @@ add_action("wp_footer","add_ta");
 // google adsense
 function add_google_adsense(){
 ?>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({
           google_ad_client: "ca-pub-7178664821856375",
           enable_page_level_ads: true
      });
-</script>
+</script> -->
 <?php
 }
 add_action( 'wp_head', 'add_google_adsense' );
